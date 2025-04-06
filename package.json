@@ -1,0 +1,49 @@
+{
+  "name": "nocturne-zk-kyc",
+  "version": "0.1.0",
+  "description": "A zero-knowledge KYC wallet extension for Nocturne",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "dev": "ts-node src/index.ts",
+    "compile-circuits": "node scripts/compile-circuits.js"
+  },
+  "dependencies": {
+    "@nocturne-xyz/client": "file:../monorepo/packages/client",
+    "@nocturne-xyz/config": "file:../monorepo/packages/config",
+    "@nocturne-xyz/core": "file:../monorepo/packages/core",
+    "@nocturne-xyz/crypto": "file:../monorepo/packages/crypto",
+    "@nocturne-xyz/contracts": "file:../monorepo/packages/contracts",
+    "circomlib": "^2.0.5",
+    "ethers": "^5.7.2",
+    "snarkjs": "^0.5.0",
+    "bigint-json-serialization": "^1.0.0",
+    "@noble/ed25519": "^1.7.3",
+    "ffjavascript": "^0.2.59",
+    "circom_tester": "^0.0.19",
+    "blake-hash": "^2.0.0",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.0.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "keywords": [
+    "nocturne",
+    "zero-knowledge",
+    "kyc",
+    "privacy",
+    "ethereum",
+    "wallet"
+  ],
+  "author": "",
+  "license": "MIT"
+}
